@@ -24,6 +24,26 @@ if(document.referrer.indexOf(document.location.hostname)==-1){ if (navigator.use
 
   gtag('config', 'G-0RS8HH85ZV');
 </script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+<style>
+.bg-slider {
+  background-position:center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-slider-title{
+  text-align:center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+}
+</style>
 </head>
 <body id="hpb-template-10-02c-03" class="hpb-layoutset-01">
 <div id="hpb-skip"><a href="#hpb-title">本文へスキップ</a></div>
@@ -45,8 +65,8 @@ if(document.referrer.indexOf(document.location.hostname)==-1){ if (navigator.use
     <!-- wrapper -->
     <div id="hpb-wrapper">
       <!-- page title -->
-      <div id="hpb-title" class="hpb-top-image">
-        <h2>子どもの学びを、より楽しく、より豊かに。</h2>
+      <div id="hpb-title" class="bg-slider">
+        <h2 class="bg-slider-title">子どもの学びを、より楽しく、より豊かに。</h2>
       </div>
       <!-- page title end --><!-- main -->
       <div id="hpb-main">
@@ -122,4 +142,18 @@ if(document.referrer.indexOf(document.location.hostname)==-1){ if (navigator.use
 <!-- container end -->
 <p>スマートフォン版</p>
 </body>
+<script src="jquery.bgswitcher.js"></script>
+<script>
+jQuery(function($) {
+  $('.bg-slider').bgSwitcher({
+   images: ['kv_a.jpg','kv_b.jpg'],
+　 interval: 3000,
+　 loop: true,
+　 shuffle: true,
+　 effect: "fade", // fade,blind,clip,slide,drop,hide
+　 duration: 500,
+　 easing: "swing" // linear,swing
+   });
+  });
+</script>
 </html>

@@ -1,21 +1,21 @@
 @charset "Shift_JIS";
 
-/* —v‘fƒŠƒZƒbƒg */
+/* ï¿½vï¿½fï¿½ï¿½ï¿½Zï¿½bï¿½g */
 body
 {
     margin: 0;
     padding: 0;
     text-align: center;
     font-size: 75%;
-    font-family: 'ƒƒCƒŠƒI' ,Meiryo, 'ƒqƒ‰ƒMƒmŠpƒS Pro W3' , 'Hiragino Kaku Gothic Pro' , '‚l‚r ‚oƒSƒVƒbƒN' , 'Osaka' ,sans-serif;
-    color: #666666; /* •W€•¶šF */
+    font-family: 'ãƒ¡ã‚¤ãƒªã‚ª' ,Meiryo, 'ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3' , 'Hiragino Kaku Gothic Pro' , 'ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯' , 'Osaka' ,sans-serif;
+    color: #666666; /* ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F */
     background-color: #ECEDEC;
     background-image : url(bg_10Bc.png);
     background-position: top center;
     background-repeat: repeat-y;
     background-attachment: fixed;
 }
-/* Safari—pƒnƒbƒN •¶šƒTƒCƒY’²® */
+/* Safariï¿½pï¿½nï¿½bï¿½N ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ */
 /*\*/
 html:\66irst-child body
 {
@@ -31,9 +31,9 @@ img
     border-left: 0;
 }
 
-/*--------------------------------------------------------
-  ƒŒƒCƒAƒEƒgİ’è
---------------------------------------------------------*/
+
+
+
 #hpb-container
 {
     margin-top: -1px;
@@ -80,7 +80,6 @@ img
 
 * html .hpb-layoutset-01 #hpb-inner
 {
-    /* for IE6 ƒŒƒCƒAƒEƒg•ö‚ê‚É‘Î‰‚·‚é‚½‚ß‚É”wŒi‚ÉƒƒCƒ“ƒCƒ[ƒW‚ğ”z’u */
     background-image : url(mainimg_10Bc.png);
     background-position: 10px 85px;
     background-repeat: no-repeat;
@@ -194,20 +193,14 @@ img
 }
 
 
-/*--------------------------------------------------------
-  ƒfƒUƒCƒ“İ’è
---------------------------------------------------------*/
-/* ”wŒiİ’è */
 
-/* ƒRƒ“ƒeƒ“ƒc”z’u—Ìˆæ */
-/* ƒgƒbƒvƒy[ƒWƒƒCƒ“ƒCƒ[ƒW */
 .hpb-layoutset-01 #hpb-title h2
 {
     width: 880px;
     margin-right: auto;
     margin-left: auto;
     height: 263px;
-    background-image : url(mainimg_10Bc.png);
+    /* background-image : url(mainimg_10Bc.png); */
     text-align: left;
     text-indent: -9999px;
     overflow: hidden;
@@ -219,7 +212,7 @@ img
 }
 
 
-/* ƒiƒrƒQ[ƒVƒ‡ƒ“ */
+/* ï¿½iï¿½rï¿½Qï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ */
 #hpb-nav ul
 {
     display: block;
@@ -271,7 +264,7 @@ img
 {
     background-position: -1px 0px;
 }
-/* ƒgƒbƒvƒy[ƒW‚Í”’ü‚ğíœ */
+/* ï¿½gï¿½bï¿½vï¿½yï¿½[ï¿½Wï¿½Í”ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½íœ */
 
 #hpb-nav li span.en
 {
@@ -308,9 +301,7 @@ img
     background-color: #ffffff;
 }
 
-/*--------------------------------------------------------
-  ‹¤’Êƒp[ƒcƒfƒUƒCƒ“İ’è
---------------------------------------------------------*/
+
 #shopinfo
 {
 }
