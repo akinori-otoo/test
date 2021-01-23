@@ -146,7 +146,7 @@ p {
 .cta_wrap .entry a::before {
   background: url("../images/icon_entry.svg") center 50%/100% auto no-repeat;
   width: 42px;
-  margin-left: -14px;
+  margin-left: -20px;
 }
 .cta_wrap .contact a::before {
   background: url("../images/icon_contact.svg") center 50%/100% auto no-repeat;
