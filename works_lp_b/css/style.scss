@@ -1,0 +1,536 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin-bottom: 30px;
+  line-height: 170%;
+  letter-spacing: 0.5px;
+}
+section{
+	// min-width: 960px;
+}
+
+/******first-view******/
+
+.first-view {
+  background: #F4F5F7;
+	// min-width: 960px;
+  min-height: 750px;
+  padding-top: 40px;
+  box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	img.fv_bg{
+		position: absolute;
+		left: 480px;
+		z-index: 0;
+		top:150px;
+	}
+}
+
+.header {
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+h1 {
+  width: 176px;
+  height: 46px;
+}
+
+.fv-container_left {
+  margin: auto 0;
+  line-height: 170%;
+	z-index: 99;
+}
+
+.fv-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+
+
+}
+
+.fv-container_left .sub {
+  margin: 50px 0;
+}
+
+h2 {
+  font-size: 52px;
+  letter-spacing: 5px;
+  line-height: 170%;
+  // white-space: nowrap;
+
+  span {
+    color: #FFC600;
+  }
+}
+
+/******header entry-btn******/
+
+.header .entry-btn {
+  background: #FFD74F;
+  min-width: 205px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50px;
+  display: block;
+  position: relative;
+  transition: all 0.1s ease-out;
+}
+
+/******entry-btn******/
+
+.entry-btn {
+  background: #FFD74F;
+  max-width: 350px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 60px;
+  display: block;
+  position: relative;
+  transition: all 0.1s ease-out;
+
+  &:hover img {
+    animation: arrow .5s;
+  }
+}
+
+/*hoverした際のアニメーション*/
+
+@keyframes arrow {
+  50% {
+    right: 10px;
+  }
+
+  100% {
+    right: 20px;
+  }
+}
+
+/******entry-btn　ここまで******/
+
+.banner {
+  max-width: 1020px;
+  margin: 100px auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.entry-btn {
+  img {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+  }
+
+  p {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+    line-height: inherit;
+  }
+}
+
+.about {
+  overflow: hidden;
+  background: #F4F5F7;
+  padding: 120px 0 30px 0;
+  box-sizing: border-box;
+	position: relative;
+
+  .inner {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+	.left {
+		width: 583px;
+	}
+
+  img.right {
+    width: 560px;
+		position: absolute;
+		top:0;
+		left: 558px;
+  }
+
+  h2 {
+		font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    margin-bottom: 60px;
+  }
+}
+
+.sub-ttl {
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+  padding: 0 0.5%;
+  display: inline-block;
+}
+
+.support {
+  padding: 120px 0;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 240px;
+  }
+
+  ul {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    line-height: 170%;
+  }
+
+  li {
+    background: #FEF4D3;
+    border-radius: 15px;
+    padding: 4%;
+    width: 32%;
+    position: relative;
+
+    img {
+      width: 200px;
+      position: absolute;
+      top: -154px;
+      right: 0;
+      left: 12px;
+      margin: auto;
+    }
+  }
+}
+
+.Sample {
+  background: #F4F5F7;
+  padding: 120px 0 30px 0;
+  box-sizing: border-box;
+	h2{
+		margin-bottom: 50px;
+	}
+
+	.inner{
+		overflow: hidden;
+	}
+
+  .section-header {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.Adviser .inner {
+  width: 80%;
+  margin: auto;
+}
+
+.Entry {
+  text-align: center;
+  background: #FEF4D3;
+  padding: 120px 0;
+  box-sizing: border-box;
+
+  .entry-btn {
+    margin: 70px auto 0 auto;
+  }
+
+  h2 {
+    margin-bottom: 70px;
+  }
+}
+
+.Adviser h2, .FAQ h2, .Partner h2 {
+  margin-bottom: 70px;
+}
+
+.Entry h3 {
+  font-size: 24px;
+  line-height: 170%;
+  margin-bottom: 40px;
+}
+
+.Adviser, .FAQ {
+  padding: 120px 0;
+  box-sizing: border-box;
+}
+
+.Adviser .section-header, .FAQ .section-header, .Partner .section-header {
+  text-align: center;
+}
+
+.Adviser {
+  img {
+    width: 100%;
+  }
+
+  ul li {
+    max-width: 560px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 170%;
+    margin: 16px 0px;
+  }
+}
+
+.adviser_prof {
+  display: flex;
+  justify-content: space-around;
+}
+
+.FAQ {
+  ul {
+    margin: auto;
+    width: 60%;
+  }
+
+  h3 {
+    background: #FADA6C;
+    padding: 2% 3%;
+    border-radius: 15px 15px 0 0;
+  }
+
+  li {
+    margin-bottom: 60px;
+
+    p {
+      background: #FEF4D3;
+      padding: 2% 3%;
+      border-radius: 0 0 15px 15px;
+    }
+  }
+}
+
+.Partner {
+  img {
+    max-height: 130px;
+  }
+
+  li {
+    background: #fff;
+    padding: 5% 10%;
+    display: table;
+    margin: 0 2%;
+    border-radius: 15px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  background: #F4F5F7;
+  padding: 120px 0;
+  box-sizing: border-box;
+}
+
+footer {
+  .upper {
+    padding: 70px 0;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+
+    a {
+      line-height: 46px;
+      font-size: 14px;
+    }
+  }
+
+  .bottom {
+    background: #FADA6C;
+    text-align: center;
+    padding: 70px 0;
+
+    img {
+      width: 160px;
+    }
+  }
+
+  small {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+  }
+}
+
+/*=================================
+スライダーのためのcss
+===================================*/
+
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 100%;
+  margin-left: 9%;
+  p {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+
+    /*スライダー内の画像を横幅100%に*/
+    height: auto;
+  }
+}
+
+/*slickのカード*/
+
+.slider-list {
+  display: flex !important;
+	align-items: center;
+  background: #fff;
+  margin: 0 50px;
+  background-size: 100% auto;
+  border-radius: 15px;
+}
+
+.slider {
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  .detail {
+    margin: auto;
+		width: 450px;
+  }
+li{
+	padding: 20px;
+	height: 200px;
+	img {
+	 height: 180px;
+	 width: auto;
+	 margin-right: 10px;
+ }
+}
+  .slick-slide {
+    margin: 0 10px;
+		overflow: hidden;
+  }
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+
+  li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  button {
+    color: transparent;
+    outline: none;
+    width: 8px;
+
+    /*ドットボタンのサイズ*/
+    height: 8px;
+
+    /*ドットボタンのサイズ*/
+    display: block;
+    border-radius: 50%;
+    background: #ccc;
+
+    /*ドットボタンの色*/
+  }
+
+  .slick-active button {
+    background: #333;
+
+    /*ドットボタンの現在地表示の色*/
+  }
+}
+
+@media screen and (max-width: 796px) {
+
+
+
+.Sample{
+ul.slider{
+	margin: 0 auto;
+	li{
+		flex-wrap: wrap;
+		height: auto;
+	}
+}
+
+}
+
+	.support {
+
+			ul{
+				  width: 90%;
+			    display: flex;
+			    flex-wrap: wrap;
+					li{
+						width: 100%!important;
+					}
+		}
+
+
+
+
+
+
+}
+}
