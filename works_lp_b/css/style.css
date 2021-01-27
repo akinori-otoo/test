@@ -2,6 +2,7 @@
 /* CSS Document */
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -432,21 +433,165 @@ footer small {
   /*ドットボタンの現在地表示の色*/
 }
 
-@media screen and (max-width: 796px) {
-  .Sample ul.slider {
-    margin: 0 auto;
+@media screen and (min-width: 428px) {
+  .pc_none {
+    display: none;
   }
-  .Sample ul.slider li {
-    flex-wrap: wrap;
-    height: auto;
+}
+@media screen and (max-width: 428px) {
+  * {
+    margin: 0;
+    padding: 0;
   }
 
-  .support ul {
+  section.about {
+    padding: 60px 0;
+  }
+
+  h2 {
+    letter-spacing: 3px;
+    line-height: 150%;
+    font-size: 2.5rem;
+  }
+
+  .header {
+    width: 90%;
+  }
+
+  .fv-container {
+    width: 90%;
+  }
+  .fv-container h2 {
+    letter-spacing: 5px;
+    line-height: 170%;
+    font-size: 30px;
+    padding-top: 100px;
+  }
+
+  section.about .inner {
+    width: 90%;
+  }
+  section.about h2 {
+    font-size: 28px;
+  }
+
+  .sp_none {
+    display: none !important;
+  }
+
+  .banner {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .banner a {
+    height: auto;
+  }
+  .banner a img {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  section.support {
+    padding: 60px 0;
+  }
+  section.support h2 {
+    font-size: 28px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  section.support .section-header {
+    margin-bottom: 40px;
+  }
+  section.support ul {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
   }
-  .support ul li {
+  section.support ul li {
     width: 100% !important;
+    margin-bottom: 20px;
+  }
+  section.support ul li img {
+    width: 120px;
+    position: static;
+    margin: 0 auto;
+    display: block;
+  }
+
+  section.Sample {
+    padding: 60px 0;
+  }
+  section.Sample h2 {
+    font-size: 25px;
+  }
+  section.Sample ul.slider {
+    margin: 0 auto;
+  }
+  section.Sample ul.slider li {
+    flex-wrap: wrap;
+    height: auto;
+    height: 400px;
+  }
+  section.Sample ul.slider li img {
+    margin: 0 auto;
+  }
+
+  section.Partner {
+    padding: 60px 0;
+  }
+  section.Partner h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  section.Partner .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  section.Partner .inner ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  section.Partner .inner ul li {
+    display: flex;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+  }
+  section.Partner .inner ul li a {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background: #fff;
+  }
+  section.Partner .inner ul li a img {
+    margin: 0 auto;
+    display: block;
+    max-height: 80px;
+  }
+
+  section.Entry {
+    padding: 60px 0;
+  }
+  section.Entry .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  section.FAQ {
+    padding: 60px 0;
+  }
+  section.FAQ ul {
+    width: 90%;
+  }
+
+  footer .upper {
+    padding: 70px 0;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 }

@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -25,6 +26,8 @@ p {
 section{
 	// min-width: 960px;
 }
+
+
 
 /******first-view******/
 
@@ -500,37 +503,175 @@ li{
     /*ドットボタンの現在地表示の色*/
   }
 }
-
-@media screen and (max-width: 796px) {
-
-
-
-.Sample{
-ul.slider{
-	margin: 0 auto;
-	li{
-		flex-wrap: wrap;
-		height: auto;
-	}
+@media screen and (min-width: 428px) {
+  .pc_none{
+    display: none;
+  }
+}
+@media screen and (max-width: 428px) {
+  *{
+  margin:0;
+  padding:0;
+  }
+  section.about{
+    padding: 60px 0;
+  }
+  h2{
+      letter-spacing: 3px;
+      line-height: 150%;
+      font-size: 2.5rem;
+    }
+    .header{
+      width: 90%;
+    }
+.fv-container{
+  width: 90%;
+  h2{
+      letter-spacing: 5px;
+      line-height: 170%;
+      font-size:30px;
+      padding-top: 100px;
+    }
 }
 
+section.about{
+  .inner{
+    width: 90%;
+  }
+  h2{
+    font-size: 28px;
+  }
 }
 
-	.support {
 
+
+  .sp_none{
+    display: none!important;
+  }
+  .banner{
+    margin: 0 auto;
+    padding: 0;
+    a{
+      height: auto;
+      img{
+        height: 100%;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+
+
+
+
+	section.support {
+padding: 60px 0;
+h2{
+  font-size: 28px;
+  width: 90%;
+  margin: 0 auto;
+}
+.section-header{
+  margin-bottom: 40px;
+}
 			ul{
 				  width: 90%;
 			    display: flex;
 			    flex-wrap: wrap;
 					li{
 						width: 100%!important;
+            margin-bottom: 20px;
+            img{
+              width: 120px;
+              position: static;
+              margin: 0 auto;
+              display: block;
+            }
 					}
 		}
+}
 
 
-
-
-
+section.Sample{
+  padding: 60px 0;
+  h2{
+    font-size: 25px;
+  }
+ul.slider{
+	margin: 0 auto;
+	li{
+		flex-wrap: wrap;
+		height: auto;
+    height: 400px;
+    img{
+      margin: 0 auto;
+    }
+	}
+}
 
 }
+
+
+section.Partner{
+  padding: 60px 0;
+  h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  .inner{
+    width: 90%;
+    margin: 0 auto;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        display: flex;
+        padding: 0;
+        margin:20px 0;
+        width: 100%;
+        a{
+          padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background: #fff;
+          img{
+            margin: 0 auto;
+            display: block;
+            max-height: 80px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+section.Entry{
+  padding: 60px 0;
+  .inner{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+section.FAQ{
+  padding: 60px 0;
+  ul{
+    width: 90%;
+  }
+}
+
+footer .upper {
+    padding: 70px 0;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 }
