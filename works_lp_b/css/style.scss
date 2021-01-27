@@ -41,7 +41,7 @@ section{
 	overflow: hidden;
 	img.fv_bg{
 		position: absolute;
-		left: 48%;
+		left: 43%;
 		z-index: 0;
 		top:120px;
 	}
@@ -195,7 +195,7 @@ h2 {
     width: 560px;
 		position: absolute;
 		top:0;
-		left: 48%;
+		left: 50%;
   }
 
   h2 {
@@ -545,6 +545,13 @@ li{
   margin:0;
   padding:0;
   }
+  .section-header{
+    // text-align: left!important;
+    // width: 90%;
+    // margin: 0 auto;
+  }
+
+
 .fv-container_left{
   margin-top: 0;
 }
@@ -734,6 +741,13 @@ section.Partner{
         padding: 0;
         margin:20px 0;
         width: 100%;
+        &:last-child{
+          a{
+            img{
+              width: 100%;
+            }
+          }
+        }
         a{
           padding: 10px;
     border-radius: 10px;

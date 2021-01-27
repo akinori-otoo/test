@@ -33,7 +33,7 @@ p {
 }
 .first-view img.fv_bg {
   position: absolute;
-  left: 48%;
+  left: 43%;
   z-index: 0;
   top: 120px;
 }
@@ -170,7 +170,7 @@ h2 span {
   width: 560px;
   position: absolute;
   top: 0;
-  left: 48%;
+  left: 50%;
 }
 .about h2 {
   font-size: 40px;
@@ -654,6 +654,9 @@ footer small {
     display: flex;
     padding: 0;
     margin: 20px 0;
+    width: 100%;
+  }
+  section.Partner .inner ul li:last-child a img {
     width: 100%;
   }
   section.Partner .inner ul li a {
