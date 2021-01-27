@@ -35,7 +35,7 @@ p {
   position: absolute;
   left: 480px;
   z-index: 0;
-  top: 150px;
+  top: 120px;
 }
 
 .header {
@@ -59,6 +59,7 @@ h1 {
   margin: auto 0;
   line-height: 170%;
   z-index: 99;
+  margin-top: 80px;
 }
 
 .fv-container {
