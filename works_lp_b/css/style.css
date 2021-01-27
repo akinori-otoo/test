@@ -188,33 +188,36 @@ h2 span {
   display: inline-block;
 }
 
-.support {
+section.support {
   padding: 120px 0;
 }
-.support .section-header {
+section.support h2 {
+  font-size: 28px;
+}
+section.support .section-header {
   text-align: center;
   margin-bottom: 240px;
 }
-.support ul {
+section.support ul {
   display: flex;
   width: 80%;
   justify-content: space-between;
   margin: auto;
 }
-.support h3 {
+section.support h3 {
   text-align: center;
   font-size: 24px;
   margin-bottom: 40px;
   line-height: 170%;
 }
-.support li {
+section.support li {
   background: #FEF4D3;
   border-radius: 15px;
   padding: 4%;
   width: 32%;
   position: relative;
 }
-.support li img {
+section.support li img {
   width: 200px;
   position: absolute;
   top: -154px;
@@ -223,18 +226,19 @@ h2 span {
   margin: auto;
 }
 
-.Sample {
+section.Sample {
   background: #F4F5F7;
   padding: 120px 0 30px 0;
   box-sizing: border-box;
 }
-.Sample h2 {
+section.Sample h2 {
+  font-size: 28px;
   margin-bottom: 50px;
 }
-.Sample .inner {
+section.Sample .inner {
   overflow: hidden;
 }
-.Sample .section-header {
+section.Sample .section-header {
   width: 80%;
   margin: auto;
 }
@@ -444,6 +448,26 @@ footer small {
     padding: 0;
   }
 
+  .first-view {
+    min-height: 740px;
+  }
+  .first-view .fv-container h2 {
+    padding-top: 40px;
+  }
+  .first-view .fv-container p.sub {
+    margin: 30px 0;
+  }
+  .first-view .fv-container .entry-btn {
+    top: 220px;
+  }
+  .first-view img.fv_bg {
+    width: 90%;
+    top: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
   section.about {
     padding: 60px 0;
   }
@@ -452,6 +476,10 @@ footer small {
     letter-spacing: 3px;
     line-height: 150%;
     font-size: 2.5rem;
+  }
+
+  .sub-ttl {
+    margin-bottom: 20px;
   }
 
   .header {
@@ -497,11 +525,15 @@ footer small {
   }
   section.support h2 {
     font-size: 28px;
-    width: 90%;
     margin: 0 auto;
   }
+  section.support .sub-ttl {
+    margin-bottom: 20px;
+  }
   section.support .section-header {
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    width: 90%;
+    text-align: left;
   }
   section.support ul {
     width: 90%;
@@ -522,16 +554,31 @@ footer small {
   section.Sample {
     padding: 60px 0;
   }
+  section.Sample .sub-ttl {
+    margin-bottom: 20px;
+  }
   section.Sample h2 {
-    font-size: 25px;
+    margin-bottom: 20px;
   }
   section.Sample ul.slider {
     margin: 0 auto;
+    padding: 0px 0 40px;
+  }
+  section.Sample ul.slider .slick-prev {
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+  }
+  section.Sample ul.slider .slick-next {
+    position: absolute;
+    bottom: 0px;
+    right: 20%;
   }
   section.Sample ul.slider li {
     flex-wrap: wrap;
     height: auto;
-    height: 400px;
+    height: 420px;
+    margin: 0 20px;
   }
   section.Sample ul.slider li img {
     margin: 0 auto;
@@ -542,7 +589,7 @@ footer small {
   }
   section.Partner h2 {
     font-size: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   section.Partner .inner {
     width: 90%;
@@ -573,6 +620,14 @@ footer small {
   section.Entry {
     padding: 60px 0;
   }
+  section.Entry h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  section.Entry h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
   section.Entry .inner {
     width: 90%;
     margin: 0 auto;
@@ -581,8 +636,31 @@ footer small {
   section.FAQ {
     padding: 60px 0;
   }
+  section.FAQ .sub-ttl {
+    margin-bottom: 20px;
+  }
+  section.FAQ h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
   section.FAQ ul {
     width: 90%;
+  }
+  section.FAQ ul li {
+    margin-bottom: 20px;
+  }
+  section.FAQ ul li:last-child {
+    margin-bottom: 0;
+  }
+  section.FAQ ul li:last-child p {
+    margin-bottom: 0;
+  }
+  section.FAQ ul li h3 {
+    font-size: 16px;
+    padding: 5%;
+  }
+  section.FAQ ul li p {
+    padding: 5%;
   }
 
   footer .upper {
